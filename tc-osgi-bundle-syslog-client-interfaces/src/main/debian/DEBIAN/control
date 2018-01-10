@@ -3,9 +3,7 @@ Version: ${versiontimestamp}
 Section: base
 Priority: optional
 Architecture: all
-Depends: tc-osgi-bundle-utils-interfaces-${utils.interfaces.version}, 
-tc-osgi-bundle-syslog-common-${syslog.common.version}, 
-tc-osgi-bundle-syslog4j-wrapper-${wrapper.version}
+Depends: tc-osgi-bundle-utils-interfaces-${utils.interfaces.version}, tc-osgi-bundle-syslog-common-${syslog.common.version}, tc-osgi-bundle-syslog4j-wrapper-${wrapper.version}
 Maintainer: Collonville Thomas <collonville_tom@yahoo.fr>
 Homepage: <http://collonville.thomas.free.fr>
 Description: Bundle morphmath generique osgi 
