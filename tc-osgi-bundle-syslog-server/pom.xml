@@ -20,7 +20,6 @@
 		<dependency>
 			<groupId>org.tc.osgi.bundle.utils</groupId>
 			<artifactId>tc-osgi-bundle-utils-interfaces</artifactId>
-			<type>bundle</type>
 			<classifier>assembly</classifier>
 			<version>${utils.interfaces.version}${snapshot}</version>
 			<scope>compile</scope>
@@ -28,7 +27,6 @@
 		<dependency>
 			<groupId>org.tc.osgi.bundle.syslog</groupId>
 			<artifactId>tc-osgi-bundle-syslog-server-interfaces</artifactId>
-			<type>bundle</type>
 			<classifier>assembly</classifier>
 			<version>${syslog.server.interfaces.version}${snapshot}</version>
 			<scope>compile</scope>
@@ -36,7 +34,6 @@
 		<dependency>
 			<groupId>org.tc.osgi.bundle.syslog</groupId>
 			<artifactId>tc-osgi-bundle-syslog-common</artifactId>
-			<type>bundle</type>
 			<classifier>assembly</classifier>
 			<version>${syslog.common.version}${snapshot}</version>
 			<scope>compile</scope>
@@ -44,7 +41,6 @@
 		<dependency>
 			<groupId>org.tc.osgi.bundle.wrapper</groupId>
 			<artifactId>tc-osgi-bundle-syslog4j-wrapper</artifactId>
-			<type>bundle</type>
 			<classifier>assembly</classifier>
 			<version>${wrapper.version}${snapshot}</version>
 			<scope>compile</scope>
