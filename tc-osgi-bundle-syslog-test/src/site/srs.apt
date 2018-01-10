@@ -1,0 +1,12 @@
+SyslogTest Software Requirements Specification
+
+* TC-osgi-syslog-test module
+
+** @req SRS_BUNDLE_SYSLOG_TEST_010
+
+  Le bundle fourni le moyen de tester la communication syslog des clients et server
+  
+        * @version 0.1.0
+        
+        * @track SRS_TC_190
+        

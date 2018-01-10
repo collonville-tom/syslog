@@ -1,0 +1,33 @@
+Syslog Software Design Description
+
+* TC-osgi-syslog module
+
+  Le modufle syslog defini 3 bundles.
+
+** @req SDD_BUNDLE_SYSLOG_010
+
+  Le composant client syslog est un bundle osgi
+  
+        * @version 0.1.0
+        
+        * @track SDD_TC_010, SDD_TC_020
+        
+        * @depend SRS_BUNDLE_SYSLOG_030
+        
+** @req SRS_BUNDLE_SYSLOG_020
+
+  Le composant server syslog est un bundle osgi
+  
+        * @version 0.1.0
+        
+        * @track SDD_TC_010, SDD_TC_020
+        
+        * @depend SRS_BUNDLE_SYSLOG_030
+        
+** @req SRS_BUNDLE_SYSLOG_030
+
+  Un composant common syslog de type bundle osgi permet de facoriser le code commun au client et server
+  
+        * @version 0.1.0
+        
+        * @track SDD_TC_010, SDD_TC_020

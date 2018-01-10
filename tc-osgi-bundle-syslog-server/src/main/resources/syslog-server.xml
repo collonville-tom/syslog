@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ConfigurationLibrary
+	xmlns="http://collonville.thomas.fr/tc-osgi-bundle-utils/config-file-schema">
+	<configFiles>
+		<defaultValue>localhost</defaultValue>
+		<valueType>java.lang.String</valueType>
+		<fieldName>defaultHost</fieldName>
+		<className>org.tc.osgi.bundle.syslog.server.module.service.impl.SyslogServerServiceImpl</className>
+	</configFiles>
+	<configFiles>
+		<defaultValue>1514</defaultValue>
+		<valueType>java.lang.String</valueType>
+		<fieldName>defaultPort</fieldName>
+		<className>org.tc.osgi.bundle.syslog.server.module.service.impl.SyslogServerServiceImpl</className>
+	</configFiles>
+</ConfigurationLibrary>
+
+
