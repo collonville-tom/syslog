@@ -1,6 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.tc.osgi.bundle</groupId>
+  <groupId>org.tc.osgi.bundle.syslog</groupId>
   <artifactId>tc-osgi-bundle-syslog-client</artifactId>
  <name>${project.artifactId}-${project.version}</name>
   <description>Un client syslog</description>
@@ -18,7 +18,7 @@
   
        <dependencies>
         <dependency>
-            <groupId>org.tc.osgi.bundle</groupId>
+            <groupId>org.tc.osgi.bundle.utils</groupId>
             <artifactId>tc-osgi-bundle-utils-interfaces</artifactId>
             <type>bundle</type>
             <classifier>assembly</classifier>
@@ -26,7 +26,7 @@
             <scope>compile</scope>
         </dependency>
  		<dependency>
-			<groupId>org.tc.osgi.bundle</groupId>
+			<groupId>org.tc.osgi.bundle.syslog</groupId>
 			<artifactId>tc-osgi-bundle-syslog-client-interfaces</artifactId>
 			<type>bundle</type>
 			<classifier>assembly</classifier>
@@ -34,7 +34,7 @@
 			<scope>compile</scope>
 		</dependency>
         <dependency>
-			<groupId>org.tc.osgi.bundle</groupId>
+			<groupId>org.tc.osgi.bundle.syslog</groupId>
 			<artifactId>tc-osgi-bundle-syslog-common</artifactId>
 			<type>bundle</type>
 			<classifier>assembly</classifier>
@@ -42,7 +42,7 @@
 			<scope>compile</scope>
 		</dependency>
         <dependency>
-			<groupId>org.tc.osgi.wrapper</groupId>
+			<groupId>org.tc.osgi.bundle.wrapper</groupId>
 			<artifactId>tc-osgi-bundle-syslog4j-wrapper</artifactId>
 			<type>bundle</type>
 			<classifier>assembly</classifier>
