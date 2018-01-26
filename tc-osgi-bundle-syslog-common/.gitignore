@@ -4,3 +4,6 @@
 /.project
 /bundles
 /target
+/target/
+/.settings/
+/.project

@@ -5,3 +5,6 @@
 /target
 /bundles
 /target
+/target/
+/.settings/
+/.project
