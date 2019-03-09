@@ -11,7 +11,7 @@
 		<syslog.server.interfaces.version>0.1.0</syslog.server.interfaces.version>
 		<utils.interfaces.version>0.1.0</utils.interfaces.version>
 		<syslog.common.version>0.2.0</syslog.common.version>
-		<wrapper.version>0.9.46</wrapper.version>
+		<wrapper.version>0.9.46.1</wrapper.version>
 		<snapshot>-SNAPSHOT</snapshot>
 	</properties>
 

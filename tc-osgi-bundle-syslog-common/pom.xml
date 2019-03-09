@@ -9,7 +9,7 @@
 	<properties>
 		<build>0.2.0</build>
 		<utils.interfaces.version>0.1.0</utils.interfaces.version>
-        <wrapper.version>0.9.46</wrapper.version>
+        <wrapper.version>0.9.46.1</wrapper.version>
         <snapshot>-SNAPSHOT</snapshot>
 	</properties>
   
