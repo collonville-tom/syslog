@@ -25,14 +25,14 @@ public class SyslogServerServiceImpl implements ISyslogServerService {
 
 	public String getDefaultHost() throws FieldTrackingAssignementException {
 		if (defaultHost == null) {
-			PropertyServiceProxy.getInstance().getXMLPropertyFile(SyslogServerPropertyFile.getInstance().getXMLFile()).fieldTraking(this, "defaultHost");
+			PropertyServiceProxy.getInstance().getYamlPropertyFile(SyslogServerPropertyFile.getInstance().getYamlFile()).fieldTraking(this, "defaultHost");
 		}
 		return defaultHost;
 	}
 
 	public String getDefaultPort() throws FieldTrackingAssignementException {
 		if (defaultPort == null) {
-			PropertyServiceProxy.getInstance().getXMLPropertyFile(SyslogServerPropertyFile.getInstance().getXMLFile()).fieldTraking(this, "defaultPort");
+			PropertyServiceProxy.getInstance().getYamlPropertyFile(SyslogServerPropertyFile.getInstance().getYamlFile()).fieldTraking(this, "defaultPort");
 		}
 		return defaultPort;
 	}
@@ -60,8 +60,7 @@ public class SyslogServerServiceImpl implements ISyslogServerService {
 		final SyslogServerWrapper wrapper = new SyslogServerWrapper(prot, addr, port);
 		final String key = wrapper.getKey();
 		if (!SyslogServerServiceImpl.servers.containsKey(key)) {
-			LoggerServiceProxy.getInstance().getLogger(SyslogServerServiceImpl.class).debug(
-				"Le server syslog demande n'existe pas, il est cree avec la clef " + wrapper.getKey());
+			LoggerServiceProxy.getInstance().getLogger(SyslogServerServiceImpl.class).debug("Le server syslog demande n'existe pas, il est cree avec la clef " + wrapper.getKey());
 			SyslogServerServiceImpl.servers.put(key, wrapper);
 			final Thread t = new Thread(wrapper, "SyslogThread-" + key);
 			wrapper.setThreadContainer(t);

@@ -5,7 +5,7 @@ import org.tc.osgi.bundle.syslog.server.interf.module.service.ISyslogServerServi
 import org.tc.osgi.bundle.syslog.server.module.service.LoggerServiceProxy;
 import org.tc.osgi.bundle.syslog.server.module.service.PropertyServiceProxy;
 import org.tc.osgi.bundle.syslog.server.module.service.impl.SyslogServerServiceImpl;
-import org.tc.osgi.bundle.utils.interf.module.exception.TcOsgiException;
+import org.tc.osgi.bundle.utils.interf.exception.TcOsgiException;
 import org.tc.osgi.bundle.utils.interf.module.service.ILoggerUtilsService;
 import org.tc.osgi.bundle.utils.interf.module.service.IPropertyUtilsService;
 import org.tc.osgi.bundle.utils.interf.module.utils.AbstractTcOsgiActivator;
@@ -13,6 +13,7 @@ import org.tc.osgi.bundle.utils.interf.module.utils.TcOsgiProxy;
 
 /**
  * SyslogServerActivator.java.
+ * 
  * @author Collonville Thomas
  * @version 0.1.0
  */

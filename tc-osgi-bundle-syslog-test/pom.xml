@@ -8,14 +8,14 @@
 	<packaging>bundle</packaging>
 	<version>${build}${snapshot}</version>
 	<properties>
-		<build>0.1.0</build>
-		<utils.interfaces.version>0.1.0</utils.interfaces.version>
-		<syslog.client.interfaces.version>0.1.0</syslog.client.interfaces.version>
-		<syslog.server.interfaces.version>0.1.0</syslog.server.interfaces.version>
-		<utils.version>0.3.0</utils.version>
-		<syslog.client.version>0.2.0</syslog.client.version>
-		<syslog.serverversion>0.2.0</syslog.serverversion>
-		<equinox-loader.version>0.2.0</equinox-loader.version>
+		<build>0.11.0</build>
+		<utils.interfaces.version>0.11.0</utils.interfaces.version>
+		<syslog.client.interfaces.version>0.11.0</syslog.client.interfaces.version>
+		<syslog.server.interfaces.version>0.11.0</syslog.server.interfaces.version>
+		<utils.version>0.11.0</utils.version>
+		<syslog.client.version>0.11.0</syslog.client.version>
+		<syslog.serverversion>0.11.0</syslog.serverversion>
+		<equinox-loader.version>0.11.0</equinox-loader.version>
 		<snapshot>-SNAPSHOT</snapshot>
 	</properties>
 
@@ -24,7 +24,7 @@
 			<groupId>org.tc.osgi.bundle.utils</groupId>
 			<artifactId>tc-osgi-bundle-utils-interfaces</artifactId>
 			<classifier>assembly</classifier>
-			<version>${utils.interfaces.version}</version>
+			<version>${utils.interfaces.version}${snapshot}</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
@@ -46,7 +46,7 @@
 	<parent>
 		<groupId>org.tc.parent</groupId>
     	<artifactId>tc-osgi-parent</artifactId>
-		<version>0.8.1</version>
+		<version>0.11.0-SNAPSHOT</version>
 	</parent>
 
 	<build>

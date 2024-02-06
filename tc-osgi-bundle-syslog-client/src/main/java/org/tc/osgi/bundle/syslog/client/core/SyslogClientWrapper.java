@@ -12,8 +12,7 @@ public class SyslogClientWrapper implements ISyslogClientWrapper {
 	private SyslogIF syslog;
 
 	public SyslogClientWrapper(final SyslogProtocole prot, final String addr, final int port) {
-		final StringBuilder debutmsg = new StringBuilder("Init SyslogClientWrapper ").append(prot.name()).append(":").append(addr).append(":").append(
-			String.valueOf(port));
+		final StringBuilder debutmsg = new StringBuilder("Init SyslogClientWrapper ").append(prot.name()).append(":").append(addr).append(":").append(String.valueOf(port));
 		LoggerServiceProxy.getInstance().getLogger(SyslogClientWrapper.class).debug(debutmsg.toString());
 		if (prot.equals(SyslogProtocole.TCP)) {
 			syslog = Syslog.getInstance(SyslogConstants.TCP);

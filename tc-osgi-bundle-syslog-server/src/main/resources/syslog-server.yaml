@@ -1,0 +1,12 @@
+config:
+   -  value: localhost
+      type: java.lang.String
+      field: defaultHost
+      className: org.tc.osgi.bundle.syslog.server.module.service.impl.SyslogServerServiceImpl
+   -  value: 1514
+      type: java.lang.String
+      field: defaultPort
+      className: org.tc.osgi.bundle.syslog.client.module.service.impl.SyslogServerServiceImpl
+
+
+

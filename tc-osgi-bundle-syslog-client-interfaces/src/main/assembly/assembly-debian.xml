@@ -37,9 +37,6 @@
 			<outputDirectory>/opt/equinox-loader/bundles/${project.artifactId}-${project.version}</outputDirectory>
 			<useDefaultExcludes>true</useDefaultExcludes>
 			<filtered>true</filtered>
-			<includes>
-				<include>syslog-client.xml</include>
-			</includes>
 		</fileSet>
 	</fileSets>
 </assembly>

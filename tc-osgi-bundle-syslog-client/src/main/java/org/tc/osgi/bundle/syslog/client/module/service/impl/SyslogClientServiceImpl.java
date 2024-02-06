@@ -24,14 +24,14 @@ public class SyslogClientServiceImpl implements ISyslogClientService {
 
 	public String getDefaultHost() throws FieldTrackingAssignementException {
 		if (defaultHost == null) {
-			PropertyServiceProxy.getInstance().getXMLPropertyFile(SyslogClientPropertyFile.getInstance().getXMLFile()).fieldTraking(this, "defaultHost");
+			PropertyServiceProxy.getInstance().getYamlPropertyFile(SyslogClientPropertyFile.getInstance().getYamlFile()).fieldTraking(this, "defaultHost");
 		}
 		return defaultHost;
 	}
 
 	public String getDefaultPort() throws FieldTrackingAssignementException {
 		if (defaultPort == null) {
-			PropertyServiceProxy.getInstance().getXMLPropertyFile(SyslogClientPropertyFile.getInstance().getXMLFile()).fieldTraking(this, "defaultPort");
+			PropertyServiceProxy.getInstance().getYamlPropertyFile(SyslogClientPropertyFile.getInstance().getYamlFile()).fieldTraking(this, "defaultPort");
 		}
 		return defaultPort;
 	}

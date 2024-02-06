@@ -30,6 +30,7 @@
 			<filtered>true</filtered>
 			<includes>
 				<include>syslog-client.xml</include>
+				<include>syslog-client.yaml</include>
 			</includes>
 		</fileSet>
 	</fileSets>

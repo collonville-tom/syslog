@@ -5,6 +5,7 @@ import org.tc.osgi.bundle.utils.interf.conf.exception.FieldTrackingAssignementEx
 
 /**
  * AptConfiguration.java.
+ * 
  * @author collonville thomas
  * @version 0.0.1
  */
@@ -26,6 +27,7 @@ public final class SyslogClientPropertyFile extends AbstractPropertyFile {
 
 	/**
 	 * getInstance.
+	 * 
 	 * @return DefaultConfig
 	 * @throws EquinoxConfigException
 	 * @throws FieldTrackingAssignementException
@@ -68,6 +70,12 @@ public final class SyslogClientPropertyFile extends AbstractPropertyFile {
 	 */
 	@Override
 	public String getXMLFile() {
+		return SyslogClientPropertyFile.getInstance().getConfigDirectory() + getConfFile();
+	}
+
+	@Override
+	public String getYamlFile() {
+		// TODO Auto-generated method stub
 		return SyslogClientPropertyFile.getInstance().getConfigDirectory() + getConfFile();
 	}
 
